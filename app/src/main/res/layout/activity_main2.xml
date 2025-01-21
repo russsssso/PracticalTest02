@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <!-- Input for t1 -->
+    <EditText
+        android:id="@+id/t1EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 1"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="8dp" />
+
+    <!-- Input for t2 -->
+    <EditText
+        android:id="@+id/t2EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 2"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/t1EditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+    <!-- Spinner for operation selection -->
+    <Spinner
+        android:id="@+id/operationSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/t2EditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to send the request -->
+    <Button
+        android:id="@+id/sendRequestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Request"
+        app:layout_constraintTop_toBottomOf="@id/operationSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- TextView to display the result -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will be displayed here"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/sendRequestButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

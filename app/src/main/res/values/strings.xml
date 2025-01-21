@@ -1,16 +1,8 @@
 <resources>
     <string name="app_name">PracticalTest02</string>
 
-        <string-array name="currency_array">
-            <item>RON</item>
-            <item>EUR</item>
-            <item>USD</item>
-            <item>GBP</item>
-            <item>INR</item>
-            <item>JPY</item>
-            <item>AUD</item>
-            <item>CAD</item>
-            <item>CNY</item>
-            <item>CHF</item>
-        </string-array>
+    <string-array name="currency_array">
+        <item>EUR</item>
+        <item>USD</item>
+    </string-array>
 </resources>
